@@ -7,7 +7,7 @@ import axios from 'axios';
 
 function App() {
   const [query, setQuery] = useState('')
-  const [categoria, serCategoria ] = useState('');
+  const [categoria, setCategoria ] = useState('');
   const [photos, setPhotos] = useState([])
   const fetchData = async ({ query, categoria }) => {
     const apiKey = import.meta.env.VITE_UNSPLASH_API_KEY;
