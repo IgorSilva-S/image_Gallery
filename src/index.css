@@ -17,9 +17,11 @@
   height: 40px;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 4px;
   box-sizing: border-box;
-  transition-duration: .2s;
+  position: relative;
+  border-bottom-color: #fff;
+  overflow: hidden;
 }
 
 .searchBar input:focus {
