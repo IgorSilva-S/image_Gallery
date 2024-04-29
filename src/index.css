@@ -116,3 +116,27 @@
     border-color: #303030;
   }
 }
+
+.foto-ampliada-backdrop {
+  position: fixed;
+  top: 8;
+  left: 8;
+  width: 188%;
+  height: 188%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-ampliada-container {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.foto-ampliada-container img {
+  max-width: 45%;
+  max-height: 100%;
+  border-radius: 8px;
+}

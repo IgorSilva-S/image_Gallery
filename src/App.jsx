@@ -9,6 +9,7 @@ function App() {
   const [query, setQuery] = useState('')
   const [categoria, setCategoria ] = useState('');
   const [photos, setPhotos] = useState([])
+  const [fotoAmpliada, setFotoAmpliada] = useState(null)
   const fetchData = async ({ query, categoria }) => {
     const apiKey = import.meta.env.VITE_UNSPLASH_API_KEY;
     const response = await axios.get('https://api.unsplash.com/photos/random', {
@@ -28,8 +29,8 @@ function App() {
   return (
     <div className='container'>
       <SearchBar/>
-      <PhotoList photos={photos}/>
-      <MaxPhoto/>
+      <PhotoList photos={photos} setFotoAmpliada = {setFotoAmpliada} />
+      <MaxPhoto photo={fotoAmpliada} setFotoAmpliada = {setFotoAmpliada}/>
     </div>
   )
 }
